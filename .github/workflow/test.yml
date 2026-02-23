@@ -11,6 +11,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: pytest
         
 	# your task: figure out the remainings steps 
 	# that match your selected language. 
