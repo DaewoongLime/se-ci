@@ -14,7 +14,7 @@ class BankAccount:
             raise ValueError("Withdraw amount must be positive")
         if amount > self.balance:
             raise ValueError("Insufficient funds")
-        self.balance -= 
+        self.balance -= amount
 
     def transfer_to(self, target, amount):
         if not isinstance(target, BankAccount):
